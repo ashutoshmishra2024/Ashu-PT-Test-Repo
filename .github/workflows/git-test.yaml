@@ -14,26 +14,25 @@ jobs:
     steps:      
     - name: Checkout
       uses: actions/checkout@v4
+
+  # Run the python script
+    - name: Run python script
+      run: |
+       python3 python-script-1.py && \
+       python3 python-script-test-2.py
+
    # Run the Jmeter test cases
     - name: Run JMeter Tests
       run: |
        ls
        jmeter -n -t ./SampleAPI.jmx -Jpath=api/users?page=1 -Jduration=110 -Jusers=10 -Jrampup=10 -l ./SampleAPIjtl.jtl
-
-# Run the python script
-    - name: Run python script
-      run: |
-            python3 python-script-1.py && \
-            python3 python-script-test-2.py
-
-      
       
     #filter jtl
-   # - name: remove rampup from jtl
+    # - name: remove rampup from jtl
     #  run: |
-     #       cd /home/runner/work/pt-docker-script/pt-docker-script/apache-jmeter-5.6.3/bin
-      #      chmod 777 FilterResults.sh
-       #     ./FilterResults.sh --output-file ./SampleAPIFilteredjtl.jtl --input-file ./SampleAPIjtl.jtl --start-offset 600
+    #       cd /home/runner/work/pt-docker-script/pt-docker-script/apache-jmeter-5.6.3/bin
+    #       chmod 777 FilterResults.sh
+    #       ./FilterResults.sh --output-file ./SampleAPIFilteredjtl.jtl --input-file ./SampleAPIjtl.jtl --start-offset 600
         
    # Upload the Jmeter results    
     - name: Upload Results
