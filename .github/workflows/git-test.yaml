@@ -3,23 +3,18 @@ name: Run Jmeter Tests
 # Controls when the workflow will run
 on:
   push
-   
+  
 # A workflow run is made up of one or more jobs that can run sequentially
 jobs:
   jmeter_job:
 # The type of runner that the job will run on  
     runs-on: ecs-ec2-runner
+    
 # Git Checks-out our repository      
     name: JMeter Test Execution
     steps:      
     - name: Checkout
       uses: actions/checkout@v4
-
-# Run the python script
-    - name: Run python script
-      run: |
-       python3 python-test-script-1.py && \
-       python3 python-script-test-2.py
 
    # Run the Jmeter test cases
     - name: Run JMeter Tests
@@ -33,7 +28,8 @@ jobs:
     #       cd /home/runner/work/pt-docker-script/pt-docker-script/apache-jmeter-5.6.3/bin
     #       chmod 777 FilterResults.sh
     #       ./FilterResults.sh --output-file ./SampleAPIFilteredjtl.jtl --input-file ./SampleAPIjtl.jtl --start-offset 600
-        
+
+  
    # Upload the Jmeter results    
     - name: Upload Results
       uses: actions/upload-artifact@v4
@@ -56,3 +52,9 @@ jobs:
         name: jmeter-html-reports
         path: FilteredHTMLReport
         if-no-files-found: error
+
+    # Run the python script
+    - name: Run python script
+      run: |
+       python3 python-test-script-1.py && \
+       python3 python-script-test-2.py
