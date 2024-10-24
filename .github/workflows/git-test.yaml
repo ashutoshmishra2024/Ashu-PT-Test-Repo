@@ -20,6 +20,12 @@ jobs:
        ls
        jmeter -n -t ./SampleAPI.jmx -Jpath=api/users?page=1 -Jduration=110 -Jusers=10 -Jrampup=10 -l ./SampleAPIjtl.jtl
 
+# Run the python script
+    - name: Run python script
+      run: |
+            python3 python-script-1.py
+      
+      
     #filter jtl
     - name: remove rampup from jtl
       run: |
