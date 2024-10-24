@@ -27,11 +27,11 @@ jobs:
       
       
     #filter jtl
-    - name: remove rampup from jtl
-      run: |
-            cd /home/runner/work/pt-docker-script/pt-docker-script/apache-jmeter-5.6.3/bin
-            chmod 777 FilterResults.sh
-            ./FilterResults.sh --output-file ./SampleAPIFilteredjtl.jtl --input-file ./SampleAPIjtl.jtl --start-offset 600
+   # - name: remove rampup from jtl
+    #  run: |
+     #       cd /home/runner/work/pt-docker-script/pt-docker-script/apache-jmeter-5.6.3/bin
+      #      chmod 777 FilterResults.sh
+       #     ./FilterResults.sh --output-file ./SampleAPIFilteredjtl.jtl --input-file ./SampleAPIjtl.jtl --start-offset 600
         
    # Upload the Jmeter results    
     - name: Upload Results
