@@ -54,6 +54,7 @@ jobs:
   # Run python script to convert .json to .csv
     - name: Run python script
       run: |
+       cd /home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport && \
        python3 python-script.py
   
    
