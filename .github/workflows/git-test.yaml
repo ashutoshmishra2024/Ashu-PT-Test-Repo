@@ -42,6 +42,14 @@ jobs:
         name: jmeter-html-reports
         path: HTMLReport
         if-no-files-found: error
+
+  # Download the HTML Reports    
+    - name: Download HTML Reports
+      uses: actions/download-artifact@v4
+      with:
+        name: jmeter-html-reports
+        path: HTMLReport
+        if-no-files-found: error
    
    # Run the python script
    # - name: Run python script
