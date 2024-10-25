@@ -22,7 +22,7 @@ replace_files = {
 
 # Get the ZIP file name in the current folder
 zip_file_name = None
-for file in os.listdir(os.path.dirname(os.path.abspath(__/home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport__))):
+for file in os.listdir(os.path.dirname(os.path.abspath(/home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport))):
     if file.endswith('jmeter-html-reports.zip'):
         zip_file_name = file
         break
@@ -31,10 +31,10 @@ if zip_file_name is None:
     raise FileNotFoundError("No ZIP file found in the current folder.")
 
 # Define the path to the ZIP file
-zip_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), f'{zip_file_name}')
+zip_file_path = os.path.join(os.path.dirname(os.path.abspath(/home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport)), f'{zip_file_name}')
 
 # Define the extraction directory
-extraction_dir = os.path.dirname(os.path.abspath(__file__))
+extraction_dir = os.path.dirname(os.path.abspath(/home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport))
 
 
 # Extract all files in the ZIP file
