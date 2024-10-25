@@ -23,6 +23,11 @@ replace_files = {
 import subprocess
 subprocess.run(['ls', '-al'])
 
+# Print Current Working Directory
+import os
+cwd = os.getcwd()
+print(cwd)
+
 # Path to the directory you want to navigate to
 directory_path = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport'
 
