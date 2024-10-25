@@ -34,7 +34,7 @@ import os
 directory_path = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo'
 
 # Change the current working directory
-os.chdir(directory_path)
+os.chdir(home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo)
 
 # Verify the current working directory
 print("Current working directory:", os.getcwd())
