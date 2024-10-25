@@ -54,9 +54,9 @@ jobs:
 
 
   # Run python script to convert .json to .csv
-   # - name: Run python script
-    #  run: |
-     #  python3 python-script.py
+    - name: Run python script
+      run: |
+       python3 python-script.py
   
    
    # Run the python script
