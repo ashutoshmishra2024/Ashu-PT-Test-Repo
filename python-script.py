@@ -22,8 +22,8 @@ replace_files = {
 
 # Get the ZIP file name in the current folder
 zip_file_name = None
-for file in os.listdir(os.path.dirname(os.path.abspath(__file__))):
-    if file.endswith('.zip'):
+for file in os.listdir(os.path.dirname(os.path.abspath(__/home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport__))):
+    if file.endswith('jmeter-html-reports.zip'):
         zip_file_name = file
         break
 
