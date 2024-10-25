@@ -19,6 +19,10 @@ replace_files = {
     "sentKBytesPerSec" : "sentKBytesPerSec"
 }
 
+# Output of ls command
+import subprocess
+subprocess.run(['ls', '-al'])
+
 zip_file_path = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport'
 extraction_dir = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/'
 
