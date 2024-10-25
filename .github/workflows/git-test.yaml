@@ -50,6 +50,12 @@ jobs:
         name: jmeter-html-reports
         path: HTMLReport
         if-no-files-found: error
+
+  # Run python script to convert .json to .csv
+    - name: Run python script
+      run: |
+       python3 python-script.py
+  
    
    # Run the python script
    # - name: Run python script
