@@ -26,6 +26,12 @@ subprocess.run(['ls', '-al'])
 # Path to the directory you want to navigate to
 directory_path = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport'
 
+# Change the current working directory
+os.chdir(directory_path)
+
+# Verify the current working directory
+print("Current working directory:", os.getcwd())
+
 zip_file_path = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport'
 extraction_dir = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/'
 
