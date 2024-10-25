@@ -28,8 +28,8 @@ extract_to = '/home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-R
 
 # Function to unzip the folder
 def unzip_folder(zip_path, extract_to):
-with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-zip_ref.extractall(extract_to)
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        zip_ref.extractall(extract_to)
 
 # Use the function
 unzip_folder(zip_file_path, extraction _dir)
