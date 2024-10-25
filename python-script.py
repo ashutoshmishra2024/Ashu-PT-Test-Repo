@@ -31,7 +31,7 @@ print(cwd)
 import os
 
 # Path to the directory you want to navigate to
-directory_path = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport'
+directory_path = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo'
 
 # Change the current working directory
 os.chdir(directory_path)
