@@ -28,6 +28,8 @@ import os
 cwd = os.getcwd()
 print(cwd)
 
+import os
+
 # Path to the directory you want to navigate to
 directory_path = 'home/docker/actions-runner/_work/Ashu-PT-Test-Repo/Ashu-PT-Test-Repo/HTMLReport'
 
