@@ -32,4 +32,4 @@ def unzip_folder(zip_path, extract_to):
         zip_ref.extractall(extract_to)
 
 # Use the function
-unzip_folder(zip_file_path, extraction _dir)
+unzip_folder(zip_file_path, extraction_dir)
